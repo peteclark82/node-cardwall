@@ -15,7 +15,9 @@
     "send": "~0.1.0",
     "socket.io": "~0.9.13",
     "optimist": "~0.3.5",
-    "qejs": "~3.0.4"
+    "qejs": "~3.0.4",
+    "xml2js": "~0.2.6",
+    "request": "~2.14.0"
   },
   "main": "./lib/cardwall.js",
   "bin": {
