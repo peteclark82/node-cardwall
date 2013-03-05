@@ -12,7 +12,11 @@ if (args.help === true) { cli.showHelp(); } else {
 	loadConfiguration(path.resolve(process.cwd(), args.config), function(err, configFunc) {
 		if (cardwall.helpers.guard(err)) {return; }
 		var config = configFunc();
-		cardwall.server.start(config);
+		cardwall.runtime.start(config, function(err) {
+			if (err) { cardwall.helpers.log("error", err); } else {
+				cardwall.helpers.log("event", "Started!");
+			}
+		});
 	});
 }
 
