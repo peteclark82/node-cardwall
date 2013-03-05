@@ -1,0 +1,45 @@
+{
+  "name": "cardwall",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "Pete Clark",
+    "email": "pclarkgithub@gmail.com"
+  },
+  "contributors": [],
+  "dependencies": {
+    "async": "= 0.1.22",
+    "express": "~3.0.6",
+    "colors": "~0.6.0-1",
+    "walk": "~2.2.1",
+    "send": "~0.1.0",
+    "socket.io": "~0.9.13",
+    "optimist": "~0.3.5",
+    "qejs": "~3.0.4"
+  },
+  "main": "./lib/cardwall.js",
+  "bin": {
+    "cardwall": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "cardwall",
+    "kanban",
+    "mingle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/peteclark82/node-cardwall"
+  },
+  "bugs": {
+    "web": "https://github.com/peteclark82/node-cardwall/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/peteclark82/node-cardwall/LICENSE"
+    }
+  ]
+}
